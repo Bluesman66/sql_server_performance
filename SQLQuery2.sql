@@ -3,4 +3,4 @@ select co.*
 	left outer join CourseEnrollments ce
 		on co.CourseOfferingId = ce.CourseOfferingId
 	where co.TermCode = 'SP2016' and
-		ce.CourseOfferingId is null;
+		ce.Grade is null;
